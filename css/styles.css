@@ -1,5 +1,27 @@
 ul, ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 a{
@@ -10,6 +32,10 @@ button{
     cursor: pointer;
 }
 
+img{
+    display: block;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background: #ffffff;
@@ -17,6 +43,20 @@ body{
 }
 
 /* =========== HEADER =========== */
+
+
+
+.nav-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
 .logo-top{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -25,17 +65,30 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 40px;
 }
 
 .text-black{
     color: #2e2f42;
 }
+
+.menu {
+    display: flex;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
 .menu-link{
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .menu-link:hover,
@@ -44,7 +97,14 @@ body{
 }
 
 .address-page{
-    font-style: normal
+    font-style: normal;
+}
+
+.address-list{
+    display: flex;
+}
+.address-link:not(:last-child){
+   margin-right: 40px;
 }
 
 .contact{
@@ -52,6 +112,9 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .contact:hover,
@@ -62,6 +125,16 @@ body{
 /* ========= HERO ========= */
 .hero-page{
     background: #2e2f42;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-container{
+    padding-top: 188px;
+    padding-bottom: 292px;
+    padding-left: 331px;
+    padding-right: 331px;
 }
 
 .hero-txt{
@@ -71,15 +144,8 @@ body{
     letter-spacing: 0.02em;
     color: #ffffff;
     text-align: center;
-}
-
-.button-txt{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    letter-spacing: 0.04em;
+    margin-bottom: 48px;
+    max-width: 496px;
 }
 
 .butt{
@@ -88,6 +154,13 @@ body{
     letter-spacing: 0.04em;
     font-weight: 500;
     color: #ffffff;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    border: none;
+    padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
     }
 
 .butt:hover,
@@ -193,3 +266,4 @@ body{
 .span-white{
     color: #f4f4fd;
 }
+
