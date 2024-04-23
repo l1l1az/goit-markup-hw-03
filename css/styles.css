@@ -58,6 +58,10 @@ body{
 }
 
 /* =========== HEADER =========== */
+.header-page{
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .nav-page {
     display: flex;
     justify-content: space-between;
