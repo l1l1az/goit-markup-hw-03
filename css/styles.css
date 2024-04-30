@@ -142,8 +142,7 @@ body{
 .hero-page{
     background: #2e2f42;
     max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 188px 0;
 }
 
 .hero-container{
@@ -191,16 +190,18 @@ body{
     padding: 120px 0;
 }
 
-.visually-hidden{
+.visually-hidden {
     position: absolute;
-    clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
-}
+    border: 0;
+    padding: 0;
 
-.hbenef{
-    margin-bottom: 8px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .benefits-list{
@@ -221,7 +222,7 @@ body{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .benefits-txt{
@@ -271,10 +272,7 @@ body{
 }
 
 .name-block{
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
+padding: 32px 0;
 }
 
 .team-proff{
